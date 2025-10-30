@@ -164,3 +164,4 @@ class SqliteDatabaseConnection:
             self.sqlite_databases_directory,
             database_name
         )
+    
