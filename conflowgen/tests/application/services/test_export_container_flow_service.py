@@ -350,10 +350,7 @@ class TestExportContainerFlowService(unittest.TestCase):
                         "conflowgen.application.services.export_container_flow_service.pd.DataFrame",
                         return_value=df_mock,
                     ):
-                # The call should run without raising an exception.
                 svc._convert_table_to_pandas_dataframe(DummyModel)
-
-            # Trivial assertion: if no exception was raised, mark as passed.
             self.assertTrue(True)
         except TypeError:
             pass
